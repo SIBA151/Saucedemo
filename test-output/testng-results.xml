@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Saucedemo_project" duration-ms="134298" started-at="2023-02-23T12:09:56 IST" finished-at="2023-02-23T12:12:10 IST">
+    <groups>
+    </groups>
+    <test name="ExecuteAllTC" duration-ms="134298" started-at="2023-02-23T12:09:56 IST" finished-at="2023-02-23T12:12:10 IST">
+      <class name="com.saucedemo.qa.LoginPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="setup" is-config="true" duration-ms="9312" started-at="2023-02-23T12:09:56 IST" finished-at="2023-02-23T12:10:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="loginPageTitleTest" duration-ms="70" started-at="2023-02-23T12:10:05 IST" finished-at="2023-02-23T12:10:05 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="813" started-at="2023-02-23T12:10:05 IST" finished-at="2023-02-23T12:10:06 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageTitleTest status=SUCCESS method=LoginPageTest.loginPageTitleTest()[pri:1, instance:com.saucedemo.qa.LoginPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="setup" is-config="true" duration-ms="5064" started-at="2023-02-23T12:10:06 IST" finished-at="2023-02-23T12:10:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginPageLogoTest()[pri:2, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="loginPageLogoTest" duration-ms="99" started-at="2023-02-23T12:10:11 IST" finished-at="2023-02-23T12:10:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageLogoTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="783" started-at="2023-02-23T12:10:11 IST" finished-at="2023-02-23T12:10:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginPageLogoTest status=SUCCESS method=LoginPageTest.loginPageLogoTest()[pri:2, instance:com.saucedemo.qa.LoginPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="setup" is-config="true" duration-ms="7676" started-at="2023-02-23T12:10:12 IST" finished-at="2023-02-23T12:10:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="loginTest" duration-ms="452" started-at="2023-02-23T12:10:20 IST" finished-at="2023-02-23T12:10:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.LoginPageTest@706a04ae]" name="tearDown" is-config="true" duration-ms="837" started-at="2023-02-23T12:10:20 IST" finished-at="2023-02-23T12:10:21 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginTest status=SUCCESS method=LoginPageTest.loginTest()[pri:3, instance:com.saucedemo.qa.LoginPageTest@706a04ae] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucedemo.qa.LoginPageTest -->
+      <class name="com.saucedemo.qa.CartPageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="setup" is-config="true" duration-ms="5040" started-at="2023-02-23T12:11:11 IST" finished-at="2023-02-23T12:11:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="cartPageTitleTest()[pri:1, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="cartPageTitleTest" duration-ms="15" started-at="2023-02-23T12:11:16 IST" finished-at="2023-02-23T12:11:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="tearDown" is-config="true" duration-ms="847" started-at="2023-02-23T12:11:16 IST" finished-at="2023-02-23T12:11:17 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartPageTitleTest status=SUCCESS method=CartPageTest.cartPageTitleTest()[pri:1, instance:com.saucedemo.qa.CartPageTest@587c290d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="setup" is-config="true" duration-ms="17067" started-at="2023-02-23T12:11:17 IST" finished-at="2023-02-23T12:11:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="cartPageLogoTest()[pri:2, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="cartPageLogoTest" duration-ms="49" started-at="2023-02-23T12:11:34 IST" finished-at="2023-02-23T12:11:34 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageLogoTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="tearDown" is-config="true" duration-ms="765" started-at="2023-02-23T12:11:34 IST" finished-at="2023-02-23T12:11:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartPageLogoTest status=SUCCESS method=CartPageTest.cartPageLogoTest()[pri:2, instance:com.saucedemo.qa.CartPageTest@587c290d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="setup" is-config="true" duration-ms="23171" started-at="2023-02-23T12:11:35 IST" finished-at="2023-02-23T12:11:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="cartPageLabelTest()[pri:3, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="cartPageLabelTest" duration-ms="50" started-at="2023-02-23T12:11:58 IST" finished-at="2023-02-23T12:11:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartPageLabelTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="tearDown" is-config="true" duration-ms="775" started-at="2023-02-23T12:11:58 IST" finished-at="2023-02-23T12:11:59 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartPageLabelTest status=SUCCESS method=CartPageTest.cartPageLabelTest()[pri:3, instance:com.saucedemo.qa.CartPageTest@587c290d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="setup" is-config="true" duration-ms="9512" started-at="2023-02-23T12:11:59 IST" finished-at="2023-02-23T12:12:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="removeproductBtnTest()[pri:4, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="removeproductBtnTest" duration-ms="492" started-at="2023-02-23T12:12:09 IST" finished-at="2023-02-23T12:12:09 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeproductBtnTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.CartPageTest@587c290d]" name="tearDown" is-config="true" duration-ms="795" started-at="2023-02-23T12:12:09 IST" finished-at="2023-02-23T12:12:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeproductBtnTest status=SUCCESS method=CartPageTest.removeproductBtnTest()[pri:4, instance:com.saucedemo.qa.CartPageTest@587c290d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucedemo.qa.CartPageTest -->
+      <class name="com.saucedemo.qa.HomePageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="setup" is-config="true" duration-ms="15074" started-at="2023-02-23T12:10:21 IST" finished-at="2023-02-23T12:10:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="homePageTitleTest()[pri:1, instance:com.saucedemo.qa.HomePageTest@103f852]" name="homePageTitleTest" duration-ms="20" started-at="2023-02-23T12:10:36 IST" finished-at="2023-02-23T12:10:36 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- homePageTitleTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="tearDown" is-config="true" duration-ms="779" started-at="2023-02-23T12:10:36 IST" finished-at="2023-02-23T12:10:37 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=homePageTitleTest status=SUCCESS method=HomePageTest.homePageTitleTest()[pri:1, instance:com.saucedemo.qa.HomePageTest@103f852] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="setup" is-config="true" duration-ms="7890" started-at="2023-02-23T12:10:37 IST" finished-at="2023-02-23T12:10:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="HomePageLogoTest()[pri:2, instance:com.saucedemo.qa.HomePageTest@103f852]" name="HomePageLogoTest" duration-ms="73" started-at="2023-02-23T12:10:45 IST" finished-at="2023-02-23T12:10:45 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- HomePageLogoTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="tearDown" is-config="true" duration-ms="817" started-at="2023-02-23T12:10:45 IST" finished-at="2023-02-23T12:10:45 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=HomePageLogoTest status=SUCCESS method=HomePageTest.HomePageLogoTest()[pri:2, instance:com.saucedemo.qa.HomePageTest@103f852] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="setup" is-config="true" duration-ms="13318" started-at="2023-02-23T12:10:45 IST" finished-at="2023-02-23T12:10:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="priorityLabelTest()[pri:3, instance:com.saucedemo.qa.HomePageTest@103f852]" name="priorityLabelTest" duration-ms="70" started-at="2023-02-23T12:10:59 IST" finished-at="2023-02-23T12:10:59 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- priorityLabelTest -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="tearDown" is-config="true" duration-ms="809" started-at="2023-02-23T12:10:59 IST" finished-at="2023-02-23T12:11:00 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=priorityLabelTest status=SUCCESS method=HomePageTest.priorityLabelTest()[pri:3, instance:com.saucedemo.qa.HomePageTest@103f852] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="setup" is-config="true" duration-ms="10556" started-at="2023-02-23T12:11:00 IST" finished-at="2023-02-23T12:11:10 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="selectExpensiveProduct()[pri:4, instance:com.saucedemo.qa.HomePageTest@103f852]" name="selectExpensiveProduct" duration-ms="304" started-at="2023-02-23T12:11:10 IST" finished-at="2023-02-23T12:11:11 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectExpensiveProduct -->
+        <test-method status="PASS" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.saucedemo.qa.HomePageTest@103f852]" name="tearDown" is-config="true" duration-ms="784" started-at="2023-02-23T12:11:11 IST" finished-at="2023-02-23T12:11:11 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=selectExpensiveProduct status=SUCCESS method=HomePageTest.selectExpensiveProduct()[pri:4, instance:com.saucedemo.qa.HomePageTest@103f852] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.saucedemo.qa.HomePageTest -->
+    </test> <!-- ExecuteAllTC -->
+  </suite> <!-- Saucedemo_project -->
+</testng-results>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Saucedemo_project">
+	<test name="ExecuteAllTC">
+		<classes>
+		<class name="com.saucedemo.qa.LoginPageTest"/>
+		<class name="com.saucedemo.qa.HomePageTest"/>
+		<class name="com.saucedemo.qa.CartPageTest"></class>
+		</classes>
+	</test>
+</suite>
