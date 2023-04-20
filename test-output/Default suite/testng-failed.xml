@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.gmail.qa.CartPageTest">
+      <class name="com.saucedemo.qa.CartPageTest">
         <methods>
+          <include name="cartPageTitleTest"/>
           <include name="tearDown"/>
-          <include name="removeproductBtnTest"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.gmail.qa.CartPageTest -->
+      </class> <!-- com.saucedemo.qa.CartPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

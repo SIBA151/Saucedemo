@@ -1,4 +1,4 @@
-package Utility;
+package com.saucedemo.qa.Utility;
 
 import java.io.File;
 import java.io.IOException;

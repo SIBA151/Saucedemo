@@ -6,12 +6,13 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.saucedemo.qa.Utility.TestUtility;
 import com.saucedemo.qa.base.BaseTest;
 import com.saucedemo.qa.pageObjects.CartPage;
 import com.saucedemo.qa.pageObjects.HomePage;
 import com.saucedemo.qa.pageObjects.LoginPage;
 
-import Utility.TestUtility;
+
 
 public class CartPageTest extends BaseTest{
 	
@@ -25,7 +26,7 @@ public class CartPageTest extends BaseTest{
 		loginPage=new LoginPage();
 		homePage=new HomePage();
 		cartPage=new CartPage();
-		loginPage.doValidLogin(prop.getProperty("userMail"), prop.getProperty("password"));
+		loginPage.doValidLogin("standard_user", "secret_sauce");
 		homePage.validateAddCartLink();	
 	}
 	

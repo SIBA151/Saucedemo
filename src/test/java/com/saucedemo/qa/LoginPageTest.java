@@ -6,11 +6,12 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.saucedemo.qa.Utility.TestUtility;
 import com.saucedemo.qa.base.BaseTest;
 import com.saucedemo.qa.pageObjects.HomePage;
 import com.saucedemo.qa.pageObjects.LoginPage;
 
-import Utility.TestUtility;
+
 
 public class LoginPageTest extends BaseTest{
 	HomePage homePage;
@@ -34,7 +35,7 @@ public class LoginPageTest extends BaseTest{
 	}
 	@Test(priority=3)
 	public void loginTest() {
-		loginPage.doValidLogin(prop.getProperty("userMail"), prop.getProperty("password"));
+		loginPage.doValidLogin("standard_user", "secret_sauce");
 	}
 	
 	@AfterMethod
