@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Saucedemo_project">
+<listeners>
+   <listener class-name="com.saucedemo.qa.Utility.ExtentandListner"/>
+</listeners>
 	<test name="ExecuteAllTC">
 		<classes>
 		<class name="com.saucedemo.qa.LoginPageTest"/>

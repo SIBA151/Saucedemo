@@ -1,7 +1,5 @@
 package com.saucedemo.qa.Utility;
 
-import java.io.File;
-
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -13,15 +11,15 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
+import com.saucedemo.qa.base.BaseTest;
 
-public class ExtentandListner implements ITestListener{
+public class ExtentandListner extends BaseTest implements ITestListener{
 
 	ExtentSparkReporter htmlReport;
 	ExtentReports reports;
 	ExtentTest test;
 	
 	public void configureReport() {
-		ConfigRead configRead = new ConfigRead();
 		
 		htmlReport= new ExtentSparkReporter(System.getProperty("user.dir")+"//Reports//Saucedemo_Project_Result.html");
 		reports= new ExtentReports();
@@ -29,7 +27,7 @@ public class ExtentandListner implements ITestListener{
 		
 		reports.setSystemInfo("Machine", "HP");
 		reports.setSystemInfo("OS", "Windos10");
-		reports.setSystemInfo("Browser", configRead.getBrowser());
+		reports.setSystemInfo("Browser", prop.getBrowser());
 		
 		htmlReport.config().setDocumentTitle("CRM_Project_Result_Report");
 		htmlReport.config().setReportName("Happy_path_Result");
@@ -56,19 +54,12 @@ public class ExtentandListner implements ITestListener{
 		test.log(Status.FAIL, MarkupHelper.createLabel("Name of the failed testcase is: "+result.getName(), ExtentColor.RED));
 		test.fail(result.getThrowable());
 		
+		TestUtility.takeScreenshotAtEndOfTest(driver, result.getName());
 		
-		String screenShotPath = System.getProperty("user.dir") + "\\ScreenShot\\" + result.getName() + ".png";
+		String screenShotPath = System.getProperty("user.dir")+"\\ScreenShot\\"+result.getName()+".png";
 		
-		File screenShotFile = new File(screenShotPath);
+		test.addScreenCaptureFromPath(screenShotPath);
 		
-		if(screenShotFile.exists())
-		{
-			test.fail("Captured Screenshot is below:" + test.addScreenCaptureFromPath(screenShotPath));
-			
-		}
-		
-		
-			
 		
 		
 	}

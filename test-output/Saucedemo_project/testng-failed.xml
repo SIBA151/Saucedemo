@@ -5,8 +5,8 @@
     <classes>
       <class name="com.saucedemo.qa.LoginPageTest">
         <methods>
-          <include name="loginTest"/>
           <include name="loginPageTitleTest"/>
+          <include name="loginTest"/>
           <include name="loginPageLogoTest"/>
           <include name="setup"/>
           <include name="tearDown"/>

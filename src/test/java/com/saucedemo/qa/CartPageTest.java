@@ -1,12 +1,10 @@
 package com.saucedemo.qa;
 
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import com.saucedemo.qa.Utility.TestUtility;
 import com.saucedemo.qa.base.BaseTest;
 import com.saucedemo.qa.pageObjects.CartPage;
 import com.saucedemo.qa.pageObjects.HomePage;
@@ -32,29 +30,43 @@ public class CartPageTest extends BaseTest{
 	
 	@Test(priority=1)
 	public void cartPageTitleTest() {
+		logger.info("**********TestCase verify Cart Page Title Test Stats**********"); 	
+
 		Assert.assertEquals(cartPage.validateCartPageTitle(), "Swag Labs");
+		
+		logger.info("**********TestCase verify Cart Page Title Test Ends**********");
 	}
 	@Test(priority=2)
 	public void cartPageLogoTest() {
+		logger.info("**********TestCase verify Cart Page Logo Test Starts**********"); 	
+
 		Assert.assertTrue(cartPage.validateCartPageLogo());
+		logger.info("**********TestCase verify Cart Page Logo Test Ends**********"); 
 	}
 	@Test(priority=3)
 	public void cartPageLabelTest() {
+		logger.info("**********TestCase verify Cart Page Label Test Starts**********"); 	
+
 		Assert.assertTrue(cartPage.validateCartLabel());
+		
+		logger.info("**********TestCase verify Cart Page Label Test Ends**********");
 	}
 	@Test(priority=4)
 	public void removeproductBtnTest() {
+		
+		logger.info("**********TestCase verify Remove Product Btn Test Starts**********"); 	
+
 		cartPage.validatecContinueShoppingBtn();
 		homePage.addExpensiveProduct();
 		homePage.validateAddCartLink();
 		cartPage.validateRmoveBtn();
+		
+		logger.info("**********TestCase verify Remove Product Btn Test Ends**********"); 
 	}
 	
 	@AfterMethod
-	public void tearDown(ITestResult result) {
-		if(ITestResult.FAILURE == result.getStatus()) {
-			TestUtility.takeScreenshotAtEndOfTest(driver, result.getName());
-		}
+	public void tearDown() {
+		
 		driver.quit();
 	}
 

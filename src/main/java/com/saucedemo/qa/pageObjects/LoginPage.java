@@ -1,36 +1,59 @@
 package com.saucedemo.qa.pageObjects;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.saucedemo.qa.base.BaseTest;
 
 
 public class LoginPage extends BaseTest{
-	private By companyLogo=By.xpath("//div[@class='login_logo']");
-	private By userName=By.id("user-name");
-	private By userPassword=By.cssSelector("#password");
-	private By loginBtn=By.name("login-button");
 	
-	public WebElement getUserNameTxtField() {
-		return getElement(userName);
+	@FindBy(xpath="//div[@class='login_logo']")
+	WebElement companyLogo;
+	
+	@FindBy(id="user-name")
+	WebElement userName;
+
+	@FindBy(css="#password")
+	WebElement userPassword;
+
+	@FindBy(name="login-button")
+	WebElement loginBtn;
+	
+	
+	public LoginPage() {
+		PageFactory.initElements(driver, this);
 	}
 	
-	public WebElement getUserPasswordTxtField() {
-		return getElement(userPassword);
+	
+	public void enterUserNameTxtField(String mail) {
+		 userName.sendKeys(mail);
+	}
+	
+	public void enterUserPasswordTxtField(String password) {
+		userPassword.sendKeys(password);
+	}
+	
+	public void clickLoginBtn(){
+		loginBtn.click();
+	}
+	
+	public boolean checkLoginBtnAvailable(){
+		return loginBtn.isDisplayed();
 	}
 	
 	public String validateLoginPageTitle() {
 		return driver.getTitle();
 	}
 	public boolean validateLoginPageLogo() {
-		return getElement(companyLogo).isDisplayed();
+		return companyLogo.isDisplayed();
 	}
 	
 	public HomePage doValidLogin(String usermail, String userPassword) {
-		getUserNameTxtField().sendKeys(usermail);
-		getUserPasswordTxtField().sendKeys(userPassword);
-		getElement(loginBtn).click();
+		enterUserNameTxtField(usermail);
+		enterUserPasswordTxtField(userPassword);
+		clickLoginBtn();
 		return new HomePage();
 	}
 

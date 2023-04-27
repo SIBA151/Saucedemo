@@ -1,54 +1,86 @@
 package com.saucedemo.qa.pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.saucedemo.qa.base.BaseTest;
 
 
 public class HomePage extends BaseTest{
 	
-	private By companyLogo=By.xpath("//div[@class='app_logo']");
-	private By productsLabel=By.xpath("//span[text()='Products']");
-	private By productAmount=By.xpath("//div[@class='inventory_item_price']");
-	private By cartLink=By.cssSelector(".shopping_cart_link");
-	private By addCartNumLink=By.cssSelector("span[class='shopping_cart_badge']");
+	@FindBy(xpath="//div[@class='app_logo']")
+	WebElement companyLogo;
+	
+	@FindBy(xpath="//span[text()='Products']")
+	WebElement productsLabel;
+	
+	@FindBy(xpath="//div[@class='inventory_item_price']")
+	List<WebElement> productAmount;
+	
+	@FindBy(css=".shopping_cart_link")
+	WebElement cartLink;
+	
+	
+	@FindBy(css="span[class='shopping_cart_badge']")
+	WebElement addCartNumLink;
+	
+	@FindBy(id="react-burger-menu-btn")
+	WebElement menuBtn;
+	
+	@FindBy(css="a[id='logout_sidebar_link']")
+	WebElement logoutBtn;
+	
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
 	
 	public String validateHomePageTitle() {
 		return driver.getTitle();
 	}
 	
 	public boolean validateCompanyLogo() {
-		return getElement(companyLogo).isDisplayed();
+		return companyLogo.isDisplayed();
 	}
 	
 	public WebElement getCartLink() {
-		return getElement(cartLink);
+		return cartLink;
 	}
 	
 	public String getNumaddCartLink() {
-		return getElement(addCartNumLink).getText();
+		return addCartNumLink.getText();
 	}
 	
 	public CartPage validateAddCartLink() {
-		 getElement(cartLink).click();
+		 cartLink.click();
 		 return new CartPage();
 	}
 	
 	public boolean verifyProductsLabel() {
-		return getElement(productsLabel).isDisplayed();
+		return productsLabel.isDisplayed();
+	}
+	
+	public void validateMenutBtn() {
+		menuBtn.click();
+	}
+	
+	public void validateLogoutBtn() {
+		logoutBtn.click();
 	}
 	
 	public void addExpensiveProduct() {
 		float largAmo=0;
-		 for(WebElement elm : getElements(productAmount)) {
+		 for(WebElement elm : productAmount) {
 			 float amo=Float.parseFloat(elm.getText().replace("$", ""));
 			 if(largAmo<amo) {
 				 largAmo=amo;
 			 }
 		 }
 		 
-		 String addCartBtnxpath="//div[normalize-space()='$"+largAmo+"']/following-sibling::button[text()='Add to cart']";
+		 String addCartBtnxpath="//div[normalize-space()='$"+largAmo+"']//following-sibling::button[text()='Add to cart']";
 		 getElement(By.xpath(addCartBtnxpath)).click();
 	}
 	
