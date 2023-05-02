@@ -22,7 +22,7 @@ public class HomePageTest extends BaseTest{
 		browserSetup();
 		homePage =new HomePage();
 		loginPage = new LoginPage();
-		loginPage.doValidLogin("standard_user", "secret_sauce");
+		loginPage.loginApplication("standard_user", "secret_sauce");
 	}
 	
 	@Test(priority=1)
@@ -48,7 +48,7 @@ public class HomePageTest extends BaseTest{
 	public void priorityLabelTest() {
 		logger.info("***************TestCase verify priority Label Test Starts*****************"); 	
 
-		Assert.assertTrue(homePage.verifyProductsLabel());
+		Assert.assertTrue(homePage.productsLabel());
 		logger.info("***************TestCase verify priority Label Ends*****************"); 	
 
 	}

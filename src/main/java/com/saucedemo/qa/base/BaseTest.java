@@ -19,6 +19,7 @@ public class BaseTest {
 	protected ConfigRead prop;
 	
 	public static WebDriver driver;
+	
 	public static Logger logger=LogManager.getLogger("Saucedemo_Project");
 	
 	public WebElement getElement(By element) {

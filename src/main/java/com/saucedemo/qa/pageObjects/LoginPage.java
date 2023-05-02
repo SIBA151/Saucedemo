@@ -21,6 +21,8 @@ public class LoginPage extends BaseTest{
 	@FindBy(name="login-button")
 	WebElement loginBtn;
 	
+	@FindBy(xpath="//button[@class='error-button']")
+	WebElement errorMessage;
 	
 	public LoginPage() {
 		PageFactory.initElements(driver, this);
@@ -50,7 +52,11 @@ public class LoginPage extends BaseTest{
 		return companyLogo.isDisplayed();
 	}
 	
-	public HomePage doValidLogin(String usermail, String userPassword) {
+	public boolean validateLoginPageErrMsg() {
+		return errorMessage.isDisplayed();
+	}
+	
+	public HomePage loginApplication(String usermail, String userPassword) {
 		enterUserNameTxtField(usermail);
 		enterUserPasswordTxtField(userPassword);
 		clickLoginBtn();

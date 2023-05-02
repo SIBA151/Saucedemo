@@ -34,6 +34,7 @@ public class HomePage extends BaseTest{
 	@FindBy(css="a[id='logout_sidebar_link']")
 	WebElement logoutBtn;
 	
+	
 	public HomePage() {
 		PageFactory.initElements(driver, this);
 	}
@@ -59,7 +60,7 @@ public class HomePage extends BaseTest{
 		 return new CartPage();
 	}
 	
-	public boolean verifyProductsLabel() {
+	public boolean productsLabel() {
 		return productsLabel.isDisplayed();
 	}
 	

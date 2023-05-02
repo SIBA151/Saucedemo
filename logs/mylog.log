@@ -1,48 +1,51 @@
-[INFO ] 2023-04-27 16:10:47.767 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:10:48.568 [main] Saucedemo_Project - **********TestCase verify Cart Page Title Test Stats**********
-[INFO ] 2023-04-27 16:10:48.666 [main] Saucedemo_Project - **********TestCase verify Cart Page Title Test Ends**********
-[INFO ] 2023-04-27 16:10:52.060 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:10:52.752 [main] Saucedemo_Project - **********TestCase verify Cart Page Logo Test Starts**********
-[INFO ] 2023-04-27 16:10:52.834 [main] Saucedemo_Project - **********TestCase verify Cart Page Logo Test Ends**********
-[INFO ] 2023-04-27 16:10:56.498 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:10:57.174 [main] Saucedemo_Project - **********TestCase verify Cart Page Label Test Starts**********
-[INFO ] 2023-04-27 16:10:57.266 [main] Saucedemo_Project - **********TestCase verify Cart Page Label Test Ends**********
-[INFO ] 2023-04-27 16:11:00.311 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:01.119 [main] Saucedemo_Project - **********TestCase verify Remove Product Btn Test Starts**********
-[INFO ] 2023-04-27 16:11:01.647 [main] Saucedemo_Project - **********TestCase verify Remove Product Btn Test Ends**********
-[INFO ] 2023-04-27 16:11:04.841 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:05.397 [main] Saucedemo_Project - ***************TestCase verify Home Page title Test Starts*****************
-[INFO ] 2023-04-27 16:11:05.680 [main] Saucedemo_Project - *************** TestCase verify Home Page title Test End *****************
-[INFO ] 2023-04-27 16:11:08.759 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:09.250 [main] Saucedemo_Project - ***************TestCase verify Home Page Logo Test Starts*****************
-[INFO ] 2023-04-27 16:11:09.485 [main] Saucedemo_Project - ***************TestCase verify Home Page Logo Test Ends*****************
-[INFO ] 2023-04-27 16:11:13.506 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:14.170 [main] Saucedemo_Project - ***************TestCase verify priority Label Test Starts*****************
-[INFO ] 2023-04-27 16:11:14.444 [main] Saucedemo_Project - ***************TestCase verify priority Label Ends*****************
-[INFO ] 2023-04-27 16:11:18.877 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:19.477 [main] Saucedemo_Project - ***************TestCase verify Logout Btn Test Starts*****************
-[INFO ] 2023-04-27 16:11:20.007 [main] Saucedemo_Project - ***************TestCase verify Logout Btn Test Ends*****************
-[INFO ] 2023-04-27 16:11:24.278 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:25.141 [main] Saucedemo_Project - ***************TestCase verify select Expensive Product Test Starts*****************
-[INFO ] 2023-04-27 16:11:25.523 [main] Saucedemo_Project - ***************TestCase verify select Expensive Product Test Ends*****************
-[INFO ] 2023-04-27 16:11:29.648 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:29.666 [main] Saucedemo_Project - ********** TestCase verify login Page Title starts **********
-[INFO ] 2023-04-27 16:11:29.689 [main] Saucedemo_Project - ********** TestCase verify login Page Title Ends **********
-[INFO ] 2023-04-27 16:11:33.514 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:33.526 [main] Saucedemo_Project - **********TestCase verify login Page Logo Test Starts**********
-[INFO ] 2023-04-27 16:11:33.725 [main] Saucedemo_Project - ********** TestCase verify login Page Logo Test Ends **********
-[INFO ] 2023-04-27 16:11:38.215 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:38.218 [main] Saucedemo_Project - **********TestCase verify valid Login Test Starts**********
-[INFO ] 2023-04-27 16:11:39.167 [main] Saucedemo_Project - **********TestCase verify valid Login Test Ends**********
-[INFO ] 2023-04-27 16:11:46.294 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:46.317 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-04-27 16:11:47.106 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-04-27 16:11:53.809 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:11:53.816 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-04-27 16:11:54.219 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-04-27 16:12:00.379 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:12:00.385 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-04-27 16:12:01.164 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-04-27 16:12:04.651 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-04-27 16:12:04.664 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-04-27 16:12:10.328 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:02.764 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:02.846 [main] Saucedemo_Project - ********** TestCase verify login Page Title starts **********
+[INFO ] 2023-05-02 18:55:02.867 [main] Saucedemo_Project - ********** TestCase verify login Page Title Ends **********
+[INFO ] 2023-05-02 18:55:05.943 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:05.964 [main] Saucedemo_Project - **********TestCase verify login Page Logo Test Starts**********
+[INFO ] 2023-05-02 18:55:06.052 [main] Saucedemo_Project - ********** TestCase verify login Page Logo Test Ends **********
+[INFO ] 2023-05-02 18:55:10.972 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:10.986 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:11.678 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:14.798 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:14.811 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:15.316 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:19.577 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:19.584 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:20.233 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:24.292 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:24.300 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:29.990 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:32.937 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:32.947 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:33.390 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:36.391 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:36.417 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
+[INFO ] 2023-05-02 18:55:36.858 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[INFO ] 2023-05-02 18:55:40.110 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:40.659 [main] Saucedemo_Project - ***************TestCase verify Home Page title Test Starts*****************
+[INFO ] 2023-05-02 18:55:40.738 [main] Saucedemo_Project - *************** TestCase verify Home Page title Test End *****************
+[INFO ] 2023-05-02 18:55:43.966 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:44.555 [main] Saucedemo_Project - ***************TestCase verify Home Page Logo Test Starts*****************
+[INFO ] 2023-05-02 18:55:44.692 [main] Saucedemo_Project - ***************TestCase verify Home Page Logo Test Ends*****************
+[INFO ] 2023-05-02 18:55:47.917 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:48.469 [main] Saucedemo_Project - ***************TestCase verify priority Label Test Starts*****************
+[INFO ] 2023-05-02 18:55:48.613 [main] Saucedemo_Project - ***************TestCase verify priority Label Ends*****************
+[INFO ] 2023-05-02 18:55:51.940 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:52.826 [main] Saucedemo_Project - ***************TestCase verify Logout Btn Test Starts*****************
+[INFO ] 2023-05-02 18:55:53.314 [main] Saucedemo_Project - ***************TestCase verify Logout Btn Test Ends*****************
+[INFO ] 2023-05-02 18:55:56.318 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:55:56.871 [main] Saucedemo_Project - ***************TestCase verify select Expensive Product Test Starts*****************
+[INFO ] 2023-05-02 18:55:57.241 [main] Saucedemo_Project - ***************TestCase verify select Expensive Product Test Ends*****************
+[INFO ] 2023-05-02 18:56:01.577 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:56:02.285 [main] Saucedemo_Project - **********TestCase verify Cart Page Title Test Stats**********
+[INFO ] 2023-05-02 18:56:02.299 [main] Saucedemo_Project - **********TestCase verify Cart Page Title Test Ends**********
+[INFO ] 2023-05-02 18:56:05.379 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:56:06.138 [main] Saucedemo_Project - **********TestCase verify Cart Page Logo Test Starts**********
+[INFO ] 2023-05-02 18:56:06.201 [main] Saucedemo_Project - **********TestCase verify Cart Page Logo Test Ends**********
+[INFO ] 2023-05-02 18:56:09.256 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:56:09.984 [main] Saucedemo_Project - **********TestCase verify Cart Page Label Test Starts**********
+[INFO ] 2023-05-02 18:56:10.050 [main] Saucedemo_Project - **********TestCase verify Cart Page Label Test Ends**********
+[INFO ] 2023-05-02 18:56:12.931 [main] Saucedemo_Project - URL opened
+[INFO ] 2023-05-02 18:56:13.654 [main] Saucedemo_Project - **********TestCase verify Remove Product Btn Test Starts**********
+[INFO ] 2023-05-02 18:56:14.186 [main] Saucedemo_Project - **********TestCase verify Remove Product Btn Test Ends**********

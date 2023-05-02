@@ -42,24 +42,18 @@ public class LoginPageTest extends BaseTest{
 	}
 	
 	
-	@Test(priority=3)
-	public void loginTest() {
-		logger.info("**********TestCase verify valid Login Test Starts**********"); 	
-		
-		loginPage.doValidLogin("standard_user", "secret_sauce");
-		
-		logger.info("**********TestCase verify valid Login Test Ends**********");
-		
-	}
 	
-	
-	@Test(priority=4, dataProvider="getLoginData")
-	public void loginWithDifferentCrd(String username, String password) {
+	@Test(priority=3, dataProvider="getLoginData")
+	public void loginWithDifferentCrd(String username, String password, String scenario) {
 		logger.info("**********TestCase verify Login Test with multiple data sets Starts**********"); 	
 		
-		loginPage.enterUserNameTxtField(username);
-		loginPage.enterUserPasswordTxtField(password);
-		loginPage.clickLoginBtn();
+		loginPage.loginApplication(username, password);
+		
+		if(scenario.equals("bothcorrect")) {
+			Assert.assertTrue(homePage.productsLabel());
+		}else if(scenario.equals("wrongcredentials")){
+			Assert.assertTrue(loginPage.validateLoginPageErrMsg());
+		}
 		logger.info("**********TestCase verify Login Test with multiple data sets Ends**********");
 	}
 	

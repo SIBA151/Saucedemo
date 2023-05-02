@@ -24,7 +24,7 @@ public class CartPageTest extends BaseTest{
 		loginPage=new LoginPage();
 		homePage=new HomePage();
 		cartPage=new CartPage();
-		loginPage.doValidLogin("standard_user", "secret_sauce");
+		loginPage.loginApplication("standard_user", "secret_sauce");
 		homePage.validateAddCartLink();	
 	}
 	
@@ -36,6 +36,8 @@ public class CartPageTest extends BaseTest{
 		
 		logger.info("**********TestCase verify Cart Page Title Test Ends**********");
 	}
+	
+	
 	@Test(priority=2)
 	public void cartPageLogoTest() {
 		logger.info("**********TestCase verify Cart Page Logo Test Starts**********"); 	
@@ -43,6 +45,8 @@ public class CartPageTest extends BaseTest{
 		Assert.assertTrue(cartPage.validateCartPageLogo());
 		logger.info("**********TestCase verify Cart Page Logo Test Ends**********"); 
 	}
+	
+	
 	@Test(priority=3)
 	public void cartPageLabelTest() {
 		logger.info("**********TestCase verify Cart Page Label Test Starts**********"); 	
@@ -51,6 +55,8 @@ public class CartPageTest extends BaseTest{
 		
 		logger.info("**********TestCase verify Cart Page Label Test Ends**********");
 	}
+	
+	
 	@Test(priority=4)
 	public void removeproductBtnTest() {
 		
@@ -63,6 +69,7 @@ public class CartPageTest extends BaseTest{
 		
 		logger.info("**********TestCase verify Remove Product Btn Test Ends**********"); 
 	}
+	
 	
 	@AfterMethod
 	public void tearDown() {
