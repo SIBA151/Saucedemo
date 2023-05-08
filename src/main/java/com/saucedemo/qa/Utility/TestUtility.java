@@ -1,30 +1,16 @@
 package com.saucedemo.qa.Utility;
 
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.IOException;
 
-import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
-import org.openqa.selenium.WebDriver;
 
 public class TestUtility {
 
-	static String path=System.getProperty("user.dir")+"\\testData\\saucedemoData.xlsx";
+	
 	static XSSFWorkbook wb;
     
-	//Take Screenshot method
-	public static void takeScreenshotAtEndOfTest(WebDriver driver, String screenShotName) {
-		File source=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		try {
-			FileUtils.copyFile(source, new File("./ScreenShot/"+screenShotName+".png"));  //System.currentTimeMillis()+
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	
 	
 	public static Object[][] getTestData(String sheetTabName) {
 		
@@ -44,6 +30,7 @@ public class TestUtility {
 		}
 		return data;
 	}
+	
 	
 	
 

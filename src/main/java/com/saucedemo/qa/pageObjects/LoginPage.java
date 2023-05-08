@@ -1,13 +1,14 @@
 package com.saucedemo.qa.pageObjects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.saucedemo.qa.base.BaseTest;
 
-
-public class LoginPage extends BaseTest{
+public class LoginPage {
+	
+	WebDriver driver;
 	
 	@FindBy(xpath="//div[@class='login_logo']")
 	WebElement companyLogo;
@@ -24,7 +25,8 @@ public class LoginPage extends BaseTest{
 	@FindBy(xpath="//button[@class='error-button']")
 	WebElement errorMessage;
 	
-	public LoginPage() {
+	public LoginPage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -60,7 +62,7 @@ public class LoginPage extends BaseTest{
 		enterUserNameTxtField(usermail);
 		enterUserPasswordTxtField(userPassword);
 		clickLoginBtn();
-		return new HomePage();
+		return new HomePage(driver);
 	}
 
 }

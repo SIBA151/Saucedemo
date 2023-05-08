@@ -3,14 +3,17 @@ package com.saucedemo.qa.pageObjects;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.saucedemo.qa.base.BaseTest;
 
 
-public class HomePage extends BaseTest{
+
+public class HomePage {
+	
+	WebDriver driver;
 	
 	@FindBy(xpath="//div[@class='app_logo']")
 	WebElement companyLogo;
@@ -35,7 +38,8 @@ public class HomePage extends BaseTest{
 	WebElement logoutBtn;
 	
 	
-	public HomePage() {
+	public HomePage(WebDriver driver) {
+		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
 	
@@ -57,7 +61,7 @@ public class HomePage extends BaseTest{
 	
 	public CartPage validateAddCartLink() {
 		 cartLink.click();
-		 return new CartPage();
+		 return new CartPage(driver);
 	}
 	
 	public boolean productsLabel() {
@@ -82,7 +86,7 @@ public class HomePage extends BaseTest{
 		 }
 		 
 		 String addCartBtnxpath="//div[normalize-space()='$"+largAmo+"']//following-sibling::button[text()='Add to cart']";
-		 getElement(By.xpath(addCartBtnxpath)).click();
+		 driver.findElement(By.xpath(addCartBtnxpath)).click();
 	}
 	
 	

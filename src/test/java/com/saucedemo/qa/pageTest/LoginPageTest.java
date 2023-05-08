@@ -1,28 +1,19 @@
-package com.saucedemo.qa;
+package com.saucedemo.qa.pageTest;
 
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.saucedemo.qa.TestComponents.BaseTest;
+import com.saucedemo.qa.TestComponents.RetryClass;
 import com.saucedemo.qa.Utility.TestUtility;
-import com.saucedemo.qa.base.BaseTest;
 import com.saucedemo.qa.pageObjects.HomePage;
-import com.saucedemo.qa.pageObjects.LoginPage;
 
 public class LoginPageTest extends BaseTest{
 	HomePage homePage;
-	LoginPage loginPage;
 	
-	@BeforeMethod
-	public void setup() {
-		browserSetup();
-		homePage =new HomePage();
-		loginPage=new LoginPage();
-	}
 	
-	@Test(priority=1)
+	@Test(priority=1,retryAnalyzer=RetryClass.class)
 	public void loginPageTitleTest() {
 		
 		logger.info("********** TestCase verify login Page Title starts **********"); 
@@ -33,7 +24,7 @@ public class LoginPageTest extends BaseTest{
 	}
 	
 	
-	@Test(priority=2)
+	@Test(priority=2, groups={"smoke"})
 	public void loginPageLogoTest() {
 		
 		logger.info("**********TestCase verify login Page Logo Test Starts**********"); 		
@@ -43,11 +34,11 @@ public class LoginPageTest extends BaseTest{
 	
 	
 	
-	@Test(priority=3, dataProvider="getLoginData")
+	@Test(priority=3, dataProvider="getLoginData", retryAnalyzer=RetryClass.class)
 	public void loginWithDifferentCrd(String username, String password, String scenario) {
 		logger.info("**********TestCase verify Login Test with multiple data sets Starts**********"); 	
 		
-		loginPage.loginApplication(username, password);
+		homePage=loginPage.loginApplication(username, password);
 		
 		if(scenario.equals("bothcorrect")) {
 			Assert.assertTrue(homePage.productsLabel());
@@ -64,10 +55,6 @@ public class LoginPageTest extends BaseTest{
 	
 	
 	
-	@AfterMethod
-	public void tearDown() {
 	
-		driver.quit();
-	}
 
 }

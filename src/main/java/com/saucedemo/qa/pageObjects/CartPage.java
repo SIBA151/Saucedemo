@@ -1,14 +1,17 @@
 package com.saucedemo.qa.pageObjects;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import com.saucedemo.qa.base.BaseTest;
 
 
 
-public class CartPage extends BaseTest{
+
+public class CartPage {
+	
+	WebDriver driver;
 	
 	@FindBy (className="app_logo")
 	WebElement cartPageLogo;
@@ -22,11 +25,14 @@ public class CartPage extends BaseTest{
 	@FindBy(name="continue-shopping")
 	WebElement continueShoppingBtn;
 	
-	public CartPage() {
+	public CartPage(WebDriver driver) {
+		this.driver=driver;
+		
 		PageFactory.initElements(driver, this);
 	}
 	
 	public String validateCartPageTitle() {
+		
 		return driver.getTitle();
 	}
 	
@@ -40,7 +46,7 @@ public class CartPage extends BaseTest{
 	}
 	public HomePage validatecContinueShoppingBtn() {
 		continueShoppingBtn.click();
-		return new HomePage();
+		return new HomePage(driver);
 	}
 	
 	public void validateRmoveBtn() {
