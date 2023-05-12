@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [sute]">
   <listeners>
-    <listener class-name="com.saucedemo.qa.TestComponents.ExtentandListner"/>
+    <listener class-name="com.saucedemo.qa.TestComponents.Listeners"/>
   </listeners>
   <test thread-count="5" name="SmokeTest(failed)">
     <groups>
@@ -11,13 +11,24 @@
       </run>
     </groups>
     <classes>
-      <class name="com.saucedemo.qa.pageTest.LoginPageTest">
+      <class name="com.saucedemo.qa.pageTest.HomePageTest">
         <methods>
-          <include name="loginPageLogoTest"/>
+          <include name="selectExpensiveProduct"/>
           <include name="tearDown"/>
+          <include name="beforeSetUp"/>
+          <include name="verifyLogoutBtn"/>
+          <include name="initialization"/>
+          <include name="HomePageLogoTest"/>
+        </methods>
+      </class> <!-- com.saucedemo.qa.pageTest.HomePageTest -->
+      <class name="com.saucedemo.qa.pageTest.CartPageTest">
+        <methods>
+          <include name="removeproductBtnTest"/>
+          <include name="tearDown"/>
+          <include name="cartPageLogoTest"/>
           <include name="initialization"/>
         </methods>
-      </class> <!-- com.saucedemo.qa.pageTest.LoginPageTest -->
+      </class> <!-- com.saucedemo.qa.pageTest.CartPageTest -->
     </classes>
   </test> <!-- SmokeTest(failed) -->
 </suite> <!-- Failed suite [sute] -->

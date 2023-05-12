@@ -1,24 +1,75 @@
-[INFO ] 2023-05-08 09:41:29.330 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:30.366 [main] Saucedemo_Project - ********** TestCase verify login Page Title starts **********
-[INFO ] 2023-05-08 09:41:30.382 [main] Saucedemo_Project - ********** TestCase verify login Page Title Ends **********
-[INFO ] 2023-05-08 09:41:32.664 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:33.552 [main] Saucedemo_Project - **********TestCase verify login Page Logo Test Starts**********
-[INFO ] 2023-05-08 09:41:33.631 [main] Saucedemo_Project - ********** TestCase verify login Page Logo Test Ends **********
-[INFO ] 2023-05-08 09:41:36.703 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:37.541 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:41:38.238 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-05-08 09:41:40.421 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:41.265 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:41:41.740 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-05-08 09:41:44.148 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:45.050 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:41:45.663 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-05-08 09:41:47.879 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:48.857 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:41:54.568 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-05-08 09:41:56.790 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:41:57.655 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:41:58.130 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
-[INFO ] 2023-05-08 09:42:00.443 [main] Saucedemo_Project - URL opened
-[INFO ] 2023-05-08 09:42:01.276 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Starts**********
-[INFO ] 2023-05-08 09:42:01.708 [main] Saucedemo_Project - **********TestCase verify Login Test with multiple data sets Ends**********
+[DEBUG] 2023-05-12 11:00:22.097 InternalLoggerFactory - Using Log4J2 as the default logging framework
+[DEBUG] 2023-05-12 11:00:22.113 ResourceLeakDetector - -Dio.netty.leakDetection.level: simple
+[DEBUG] 2023-05-12 11:00:22.114 ResourceLeakDetector - -Dio.netty.leakDetection.targetRecords: 4
+[DEBUG] 2023-05-12 11:00:22.126 ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@515ebef3
+[DEBUG] 2023-05-12 11:00:22.171 PlatformDependent0 - -Dio.netty.noUnsafe: false
+[DEBUG] 2023-05-12 11:00:22.171 PlatformDependent0 - Java version: 19
+[DEBUG] 2023-05-12 11:00:22.173 PlatformDependent0 - sun.misc.Unsafe.theUnsafe: available
+[DEBUG] 2023-05-12 11:00:22.175 PlatformDependent0 - sun.misc.Unsafe.copyMemory: available
+[DEBUG] 2023-05-12 11:00:22.178 PlatformDependent0 - sun.misc.Unsafe.storeFence: available
+[DEBUG] 2023-05-12 11:00:22.179 PlatformDependent0 - java.nio.Buffer.address: available
+[DEBUG] 2023-05-12 11:00:22.181 PlatformDependent0 - direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+[DEBUG] 2023-05-12 11:00:22.183 PlatformDependent0 - java.nio.Bits.unaligned: available, true
+[DEBUG] 2023-05-12 11:00:22.185 PlatformDependent0 - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @77cd7a0
+[DEBUG] 2023-05-12 11:00:22.193 PlatformDependent0 - java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[DEBUG] 2023-05-12 11:00:22.194 PlatformDependent - sun.misc.Unsafe: available
+[DEBUG] 2023-05-12 11:00:22.195 PlatformDependent - maxDirectMemory: 2124414976 bytes (maybe)
+[DEBUG] 2023-05-12 11:00:22.196 PlatformDependent - -Dio.netty.tmpdir: C:\Users\shiva\AppData\Local\Temp (java.io.tmpdir)
+[DEBUG] 2023-05-12 11:00:22.196 PlatformDependent - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[DEBUG] 2023-05-12 11:00:22.198 PlatformDependent - Platform: Windows
+[DEBUG] 2023-05-12 11:00:22.201 PlatformDependent - -Dio.netty.maxDirectMemory: -1 bytes
+[DEBUG] 2023-05-12 11:00:22.201 PlatformDependent - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[DEBUG] 2023-05-12 11:00:22.205 CleanerJava9 - java.nio.ByteBuffer.cleaner(): available
+[DEBUG] 2023-05-12 11:00:22.205 PlatformDependent - -Dio.netty.noPreferDirect: false
+[DEBUG] 2023-05-12 11:00:22.221 PlatformDependent - org.jctools-core.MpscChunkedArrayQueue: available
+[DEBUG] 2023-05-12 11:00:22.252 InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[DEBUG] 2023-05-12 11:00:22.253 InternalThreadLocalMap - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[DEBUG] 2023-05-12 11:00:22.579 JdkSslContext - Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+[DEBUG] 2023-05-12 11:00:22.580 JdkSslContext - Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+[DEBUG] 2023-05-12 11:00:22.608 GlobalEventExecutor - -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[DEBUG] 2023-05-12 11:00:22.643 MultithreadEventLoopGroup - -Dio.netty.eventLoopThreads: 8
+[DEBUG] 2023-05-12 11:00:22.662 NioEventLoop - -Dio.netty.noKeySetOptimization: false
+[DEBUG] 2023-05-12 11:00:22.662 NioEventLoop - -Dio.netty.selectorAutoRebuildThreshold: 512
+[DEBUG] 2023-05-12 11:00:22.742 PooledByteBufAllocator - -Dio.netty.allocator.numHeapArenas: 8
+[DEBUG] 2023-05-12 11:00:22.743 PooledByteBufAllocator - -Dio.netty.allocator.numDirectArenas: 8
+[DEBUG] 2023-05-12 11:00:22.743 PooledByteBufAllocator - -Dio.netty.allocator.pageSize: 8192
+[DEBUG] 2023-05-12 11:00:22.743 PooledByteBufAllocator - -Dio.netty.allocator.maxOrder: 9
+[DEBUG] 2023-05-12 11:00:22.743 PooledByteBufAllocator - -Dio.netty.allocator.chunkSize: 4194304
+[DEBUG] 2023-05-12 11:00:22.744 PooledByteBufAllocator - -Dio.netty.allocator.smallCacheSize: 256
+[DEBUG] 2023-05-12 11:00:22.744 PooledByteBufAllocator - -Dio.netty.allocator.normalCacheSize: 64
+[DEBUG] 2023-05-12 11:00:22.744 PooledByteBufAllocator - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[DEBUG] 2023-05-12 11:00:22.744 PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimInterval: 8192
+[DEBUG] 2023-05-12 11:00:22.745 PooledByteBufAllocator - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[DEBUG] 2023-05-12 11:00:22.745 PooledByteBufAllocator - -Dio.netty.allocator.useCacheForAllThreads: false
+[DEBUG] 2023-05-12 11:00:22.745 PooledByteBufAllocator - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[DEBUG] 2023-05-12 11:00:22.767 ByteBufUtil - -Dio.netty.allocator.type: pooled
+[DEBUG] 2023-05-12 11:00:22.767 ByteBufUtil - -Dio.netty.threadLocalDirectBufferSize: 0
+[DEBUG] 2023-05-12 11:00:22.768 ByteBufUtil - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[DEBUG] 2023-05-12 11:00:23.255 DefaultChannelId - -Dio.netty.processId: 26156 (auto-detected)
+[DEBUG] 2023-05-12 11:00:23.260 NetUtil - -Djava.net.preferIPv4Stack: false
+[DEBUG] 2023-05-12 11:00:23.260 NetUtil - -Djava.net.preferIPv6Addresses: false
+[DEBUG] 2023-05-12 11:00:23.283 NetUtilInitializations - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[DEBUG] 2023-05-12 11:00:23.285 NetUtil - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[DEBUG] 2023-05-12 11:00:23.323 DefaultChannelId - -Dio.netty.machineId: 80:91:33:ff:fe:d6:4e:cd (auto-detected)
+[DEBUG] 2023-05-12 11:00:23.395 AbstractByteBuf - -Dio.netty.buffer.checkAccessible: true
+[DEBUG] 2023-05-12 11:00:23.396 AbstractByteBuf - -Dio.netty.buffer.checkBounds: true
+[DEBUG] 2023-05-12 11:00:23.396 ResourceLeakDetectorFactory - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@67cb2051
+[DEBUG] 2023-05-12 11:00:23.444 Recycler - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[DEBUG] 2023-05-12 11:00:23.445 Recycler - -Dio.netty.recycler.ratio: 8
+[DEBUG] 2023-05-12 11:00:23.445 Recycler - -Dio.netty.recycler.chunkSize: 32
+[DEBUG] 2023-05-12 11:00:23.446 Recycler - -Dio.netty.recycler.blocking: false
+[DEBUG] 2023-05-12 11:00:23.446 Recycler - -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[DEBUG] 2023-05-12 11:00:24.809 Brotli - brotli4j not in the classpath; Brotli support will be unavailable.
+[DEBUG] 2023-05-12 11:00:25.134 ThreadLocalRandom - -Dio.netty.initialSeedUniquifier: 0x6184b63a84d42129
+[INFO ] 2023-05-12 11:00:25.452 Saucedemo_Project - URL opened
+[INFO ] 2023-05-12 11:00:27.057 Saucedemo_Project - **********TestCase verify Cart Page Title Test Stats**********
+[INFO ] 2023-05-12 11:00:27.969 Saucedemo_Project - **********TestCase verify Cart Page Title Test Ends**********
+[INFO ] 2023-05-12 11:00:30.515 Saucedemo_Project - URL opened
+[INFO ] 2023-05-12 11:00:31.960 Saucedemo_Project - **********TestCase verify Cart Page Logo Test Starts**********
+[INFO ] 2023-05-12 11:00:32.817 Saucedemo_Project - **********TestCase verify Cart Page Logo Test Ends**********
+[INFO ] 2023-05-12 11:00:35.191 Saucedemo_Project - URL opened
+[INFO ] 2023-05-12 11:00:35.975 Saucedemo_Project - **********TestCase verify Cart Page Label Test Starts**********
+[INFO ] 2023-05-12 11:00:36.833 Saucedemo_Project - **********TestCase verify Cart Page Label Test Ends**********
+[INFO ] 2023-05-12 11:00:39.398 Saucedemo_Project - URL opened
+[INFO ] 2023-05-12 11:00:40.073 Saucedemo_Project - **********TestCase verify Remove Product Btn Test Starts**********
+[INFO ] 2023-05-12 11:00:41.324 Saucedemo_Project - **********TestCase verify Remove Product Btn Test Ends**********

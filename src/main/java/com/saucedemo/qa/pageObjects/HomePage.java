@@ -64,7 +64,7 @@ public class HomePage {
 		 return new CartPage(driver);
 	}
 	
-	public boolean productsLabel() {
+	public boolean validateProductsLabel() {
 		return productsLabel.isDisplayed();
 	}
 	

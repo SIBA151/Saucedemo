@@ -20,6 +20,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import com.saucedemo.qa.Utility.ConfigRead;
+import com.saucedemo.qa.pageObjects.HomePage;
 import com.saucedemo.qa.pageObjects.LoginPage;
 
 public class BaseTest {
@@ -27,7 +28,7 @@ public class BaseTest {
 	
 	public static WebDriver driver;
 	public LoginPage loginPage;
-	
+	public HomePage homePage;
 	public static Logger logger=LogManager.getLogger("Saucedemo_Project");
 	
 	public WebElement getElement(By element) {
@@ -58,7 +59,6 @@ public class BaseTest {
 		    driver=null;
 		    break;		
 		}
-		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		

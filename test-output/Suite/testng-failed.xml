@@ -6,13 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.saucedemo.qa.pageTest.LoginPageTest">
+      <class name="com.saucedemo.qa.pageTest.HomePageTest">
         <methods>
-          <include name="loginPageTitleTest"/>
+          <include name="priorityLabelTest"/>
           <include name="tearDown"/>
+          <include name="selectExpensiveProduct"/>
+          <include name="verifyLogoutBtn"/>
+          <include name="beforeSetUp"/>
+          <include name="homePageTitleTest"/>
           <include name="initialization"/>
+          <include name="HomePageLogoTest"/>
         </methods>
-      </class> <!-- com.saucedemo.qa.pageTest.LoginPageTest -->
+      </class> <!-- com.saucedemo.qa.pageTest.HomePageTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

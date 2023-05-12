@@ -21,6 +21,7 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onTestStart(ITestResult result) {
 		test = extent.createTest(result.getName());
+		
 	}
 
 	@Override
@@ -66,5 +67,6 @@ public class Listeners extends BaseTest implements ITestListener{
 	@Override
 	public void onFinish(ITestContext context) {
 		extent.flush();
+		
 	}
 }

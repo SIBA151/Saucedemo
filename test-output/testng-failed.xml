@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Saucedemo_project]">
   <listeners>
     <listener class-name="com.saucedemo.qa.TestComponents.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="ExecuteAllTC(failed)">
     <classes>
-      <class name="com.saucedemo.qa.pageTest.LoginPageTest">
+      <class name="com.saucedemo.qa.pageTest.CartPageTest">
         <methods>
-          <include name="loginPageTitleTest"/>
+          <include name="removeproductBtnTest"/>
+          <include name="cartPageLabelTest"/>
           <include name="tearDown"/>
           <include name="initialization"/>
         </methods>
-      </class> <!-- com.saucedemo.qa.pageTest.LoginPageTest -->
+      </class> <!-- com.saucedemo.qa.pageTest.CartPageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- ExecuteAllTC(failed) -->
+</suite> <!-- Failed suite [Saucedemo_project] -->

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Saucedemo_project">
+<suite name="Saucedemo_project" >
 	<listeners>
-		<listener class-name="com.saucedemo.qa.TestComponents.Listners" />	
+		<listener
+			class-name="com.saucedemo.qa.TestComponents.Listeners" />
 	</listeners>
 	<test name="ExecuteAllTC">
 		<classes>
 			<class name="com.saucedemo.qa.pageTest.LoginPageTest" />
 			<class name="com.saucedemo.qa.pageTest.HomePageTest" />
-			<class name="com.saucedemo.qa.pageTest.CartPageTest"></class>
+			<class name="com.saucedemo.qa.pageTest.CartPageTest" />
 		</classes>
 	</test>
 </suite>

@@ -1,17 +1,18 @@
 package com.saucedemo.qa.pageTest;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import com.saucedemo.qa.TestComponents.BaseTest;
-import com.saucedemo.qa.pageObjects.HomePage;
 
 
 
 
 
 public class HomePageTest extends BaseTest{
-	HomePage homePage;
+	
+	
 	
 	
 	@Test(priority=1)
@@ -19,6 +20,7 @@ public class HomePageTest extends BaseTest{
 		logger.info("***************TestCase verify Home Page title Test Starts*****************"); 	
 		homePage=loginPage.loginApplication("standard_user", "secret_sauce");
 		Assert.assertEquals(homePage.validateHomePageTitle(), "Swag Labs");
+		
 		logger.info("*************** TestCase verify Home Page title Test End *****************"); 	
 
 	}
@@ -35,14 +37,14 @@ public class HomePageTest extends BaseTest{
 	
 	@Test(priority=3)
 	public void priorityLabelTest() {
-		logger.info("***************TestCase verify priority Label Test Starts*****************"); 	
+		logger.info("***************TestCase verify priority Label Test Starts*****************");
 		homePage=loginPage.loginApplication("standard_user", "secret_sauce");
-		Assert.assertTrue(homePage.productsLabel());
+		Assert.assertTrue(homePage.validateProductsLabel());
 		logger.info("***************TestCase verify priority Label Ends*****************"); 	
 
 	}
 	
-	@Test(priority=4, groups={"smoke"})
+	@Test(priority=5, groups={"smoke"})
 	public void verifyLogoutBtn() {
 		logger.info("***************TestCase verify Logout Btn Test Starts*****************"); 	
 		homePage=loginPage.loginApplication("standard_user", "secret_sauce");
@@ -54,7 +56,7 @@ public class HomePageTest extends BaseTest{
 
 	}
 	
-	@Test(priority=5, groups={"smoke"})
+	@Test(priority=4, groups={"smoke"})
 	public void selectExpensiveProduct() {
 		logger.info("***************TestCase verify select Expensive Product Test Starts*****************"); 	
 		homePage=loginPage.loginApplication("standard_user", "secret_sauce");

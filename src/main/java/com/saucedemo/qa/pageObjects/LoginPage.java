@@ -39,6 +39,14 @@ public class LoginPage {
 		userPassword.sendKeys(password);
 	}
 	
+	public void clearUserNameTxtField() {
+		 userName.clear();
+	}
+	
+	public void clearUserPasswordTxtField() {
+		userPassword.clear();
+	}
+	
 	public void clickLoginBtn(){
 		loginBtn.click();
 	}
@@ -63,6 +71,11 @@ public class LoginPage {
 		enterUserPasswordTxtField(userPassword);
 		clickLoginBtn();
 		return new HomePage(driver);
+	}
+	
+	public void clearCredentialTxt() {
+		clearUserNameTxtField();
+		clearUserPasswordTxtField();
 	}
 
 }

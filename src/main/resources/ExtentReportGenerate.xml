@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="com.saucedemo.qa.TestComponents.Listeners"></listener>
   </listeners>
-  <test thread-count="5" name="Test">
+  <test name="Test">
     <classes>
-      <class name="com.saucedemo.qa.pageTest.LoginPageTest"/>
+      <class name="com.saucedemo.qa.pageTest.CartPageTest"/>
     </classes>
   </test> 
 </suite> 

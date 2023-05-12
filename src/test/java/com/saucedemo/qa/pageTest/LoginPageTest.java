@@ -7,10 +7,8 @@ import org.testng.annotations.Test;
 import com.saucedemo.qa.TestComponents.BaseTest;
 import com.saucedemo.qa.TestComponents.RetryClass;
 import com.saucedemo.qa.Utility.TestUtility;
-import com.saucedemo.qa.pageObjects.HomePage;
 
 public class LoginPageTest extends BaseTest{
-	HomePage homePage;
 	
 	
 	@Test(priority=1,retryAnalyzer=RetryClass.class)
@@ -34,16 +32,23 @@ public class LoginPageTest extends BaseTest{
 	
 	
 	
-	@Test(priority=3, dataProvider="getLoginData", retryAnalyzer=RetryClass.class)
+	@Test(priority=3, dataProvider="getLoginData")
 	public void loginWithDifferentCrd(String username, String password, String scenario) {
 		logger.info("**********TestCase verify Login Test with multiple data sets Starts**********"); 	
 		
 		homePage=loginPage.loginApplication(username, password);
 		
 		if(scenario.equals("bothcorrect")) {
-			Assert.assertTrue(homePage.productsLabel());
+			Assert.assertTrue(homePage.validateProductsLabel());
+			homePage.validateMenutBtn();
+			homePage.validateLogoutBtn();
+			
+			loginPage.clearCredentialTxt();
+			
 		}else if(scenario.equals("wrongcredentials")){
 			Assert.assertTrue(loginPage.validateLoginPageErrMsg());
+			
+			loginPage.clearCredentialTxt();
 		}
 		logger.info("**********TestCase verify Login Test with multiple data sets Ends**********");
 	}
